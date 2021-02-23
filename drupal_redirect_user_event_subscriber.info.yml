@@ -1,0 +1,5 @@
+name: 'Redirect anonymous user to SAML login'
+description: Example module for redirecting anonymous users to a custom login url.
+type: module
+core: 8.x
+package: Custom
