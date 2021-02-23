@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Contains Drupal\drupal_redirect_user_event_subscriber\EventSubscriber\RedirectAnonymousUser
+ */
+
 namespace Drupal\drupal_redirect_user_event_subscriber\EventSubscriber;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -31,6 +36,7 @@ class RedirectAnonymousUser implements EventSubscriberInterface {
   }
 
   public static function getSubscribedEvents() {
+    // In this example I am using the EXCEPTION KernerEvents constant
     $events[KernelEvents::REQUEST][] = array('checkAuthStatus');
     return $events;
   }
