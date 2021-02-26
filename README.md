@@ -1,4 +1,4 @@
-# Drupal redirect event subscriber
+# Drupal 8/9 redirect event subscriber
 
 ### Example module for redirecting anonymous users to a custom login url, in this case SAML login.
 
